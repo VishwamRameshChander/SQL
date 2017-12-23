@@ -19,6 +19,7 @@ Values (6,'Male','Approved',123456,775,'454Street','Chennai','Banking','TN',5000
 
 Update Credit_Report Set Surrogate = 'Cibil' where Ref_ID = 5;
 
+Select Distinct * from Credit_Report;
 
 Alter Table Credit_Report 
 Add Column LOS_ID Int NOT NULL;
@@ -27,3 +28,10 @@ Update Credit_Report Set LOS_ID = 20 where Ref_ID = 2;
 Update Credit_Report Set LOS_ID = 30 where Ref_ID = 3;
 Update Credit_Report Set LOS_ID = 40 where Ref_ID = 4;
 Update Credit_Report Set LOS_ID = 50 where Ref_ID = 5;
+Update Credit_Report Set LOS_ID = 60 where Ref_ID = 6;
+ 
+Select * from Disb_dump;
+
+
+
+
