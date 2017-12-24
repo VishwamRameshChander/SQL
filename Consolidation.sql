@@ -32,4 +32,7 @@ Select distinct Nextformula.LOS_ID, Nextformula.Customer_Name, Nextformula.Curre
 INNER JOIN delq_dump
 ON Nextformula.LOS_ID = delq_dump.LOS_ID;
 
+Select Distinct Ref_ID,Customer_Name, Approved_amount from Credit_Report WHERE (Approved_Amount) IN 
+(Select max(Approved_Amount) from Credit_Report);
+
 
